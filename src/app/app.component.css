@@ -1,0 +1,32 @@
+.wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  width: 300%;
+  display: flex;
+  justify-content: center;
+  transition: all .5s ease;
+  transform: translateX(0%);
+}
+
+.history {
+  width: 300%;
+  display: flex;
+  justify-content: center;
+  transition: all .5s ease;
+  transform: translateX(-33.3%);
+}
+
+.team {
+  width: 300%;
+  display: flex;
+  justify-content: center;
+  transition: all .5s ease;
+  transform: translateX(-66.6%);
+}
+
+.section {
+  width: calc(100% / 3 );
+}

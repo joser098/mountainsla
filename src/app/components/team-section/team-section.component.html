@@ -10,13 +10,18 @@
     <main class="main_team">
         <header class="bar">
             <div class="button_div_">
-                <button>MOUNTAIN 1</button>
-                <button>MOUNTAIN 2</button>
+                <button (click)="onClickSetScheduleInfo('mountain1')">MOUNTAIN 1</button>
+                <button (click)="onClickSetScheduleInfo('mountain2')">MOUNTAIN 2</button>
                 <button (click)="onClickChangeCarouselClass('history')">BACK</button>
             </div>
         </header>
 
         <div class="schedule">
+            <h2>SCHEDULE</h2>
+            <div class="schedule_content" *ngFor="let info of scheduleInfo">
+                <span>{{ info.date }}</span>
+                <span>{{ info.mountainName}}</span>
+            </div>
         </div>
     </main>
 

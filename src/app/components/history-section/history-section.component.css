@@ -1,11 +1,16 @@
 .history_section_history {
-  position: absolute;
     background: url('../../../assets/history.png');
     background-attachment:scroll;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
+  }
+
+  .logos_container {
+    display: flex;
+    align-items: center;
   }
 
   .logos_container img {
@@ -71,8 +76,14 @@
 
   @media (max-width: 600px){
     .content_history .section_div h2 {
-       font-size: 60px;
+       font-size: 50px;
     }
 
-    
+    .div_button button {
+      width: 40%;
+    }
+
+    .logos_container img {
+      width: 40%;
+    }
   }

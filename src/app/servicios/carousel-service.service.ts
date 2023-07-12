@@ -5,29 +5,6 @@ import { Class } from '../interfaces/Class';
   providedIn: 'any'
 })
 export class CarouselServiceService {
-  // carouselClasses = {
-  //   main: {
-  //     width: '300%',
-  //     display: 'flex',
-  //     'justify-content': 'center',
-  //     transition: 'all .5s ease',
-  //     transform: 'translateX(0%)'
-  //   },
-  //   history: {
-  //     width: '300%',
-  //     display: 'flex',
-  //     'justify-content': 'center',
-  //     transition: 'all .5s ease',
-  //     transform: 'translateX(-33%)'
-  //   },
-  //   team: {
-  //     width: '300%',
-  //     display: 'flex',
-  //     'justify-content': 'center',
-  //     transition: 'all .5s ease',
-  //     transform: 'translateX(-33%)'
-  //   }
-  // }
 
   private carouselClass = 'main'
 

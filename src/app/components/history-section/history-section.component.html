@@ -1,29 +1,42 @@
 <section class="history_section_history">
-    <div class="header_container_history">
-      <header class="header_nav_history">
-        <div class="logos_container">
-          <img src="{{ logoImage }}" alt="logo_mountain" />
-          <img src="{{ logo2 }}" alt="logo_text">
-        </div>
-        <div class="div_button">
-          <button (click)="onClickChangeCarouselClass('history')">01.HISTORY</button>
-          <button (click)="onClickChangeCarouselClass('team')">02.TEAM</button>
-          <button (click)="onClickChangeCarouselClass('main')">BACK</button>
-        </div>
-      </header>
-    </div>
-
-    <section class="content_history">
-      <div class="section_div">
-        <h2>01.</h2>
-        <h3>HISTORY</h3>    
+  <div class="header_container_history">
+    <header class="header_nav_history">
+      <div class="logos_container">
+        <img src="{{ logoImage }}" alt="logo_mountain" />
+        <img src="{{ logo2 }}" alt="logo_text" />
       </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    </section>
+      <div class="div_button">
+        <button (click)="onClickChangeCarouselClass('history')">
+          01.HISTORY
+        </button>
+        <button (click)="onClickChangeCarouselClass('team')">02.TEAM</button>
+        <button (click)="onClickChangeCarouselClass('main')">BACK</button>
+      </div>
+    </header>
+  </div>
 
-
+  <section class="content_history">
+    <div class="section_div">
+      <h2>01.</h2>
+      <h3>HISTORY</h3>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </p>
     <footer>
-      
+      <div class="footer_carrousel">
+        <div [ngClass]="getCurrentImage()">
+          <img class="img" src="../../../assets/photo.png" alt="image 1" />
+          <img class="img" src="../../../assets/photo1.png" alt="image 2" />
+        </div>
+        <div class="selectores">
+          <button (click)="setCurrentClass('image_container')" class="selector"></button>
+          <button (click)="setCurrentClass('image_container2')" class="selector"></button>
+        </div>
+      </div>
     </footer>
   </section>
-  
+</section>

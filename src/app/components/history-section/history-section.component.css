@@ -74,6 +74,69 @@
     width: 40%;
   }
 
+  .content_history footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 80%;
+  }
+
+  .footer_carrousel{
+    width: 30%;
+    max-width: 120rem;
+    overflow: hidden;
+  }
+  .image_container{
+    width: 200%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+
+    transition: all 1s ease;
+    transform: translate(0%);
+  }
+  .image_container2 {
+    width: 200%;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+    transition: all 1s ease;
+    transform: translate(-50%);
+  }
+  .footer_carrousel img{
+    object-fit: contain;
+    width: calc(100% / 2 - 2rem);
+    padding: 1rem;
+  }
+  .footer_carrousel .selectores{
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_carrousel .selector{
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin: 0px 5px;
+    cursor: pointer;
+  }
+
+  .footer_carrousel .selector.act{
+    background-color: orange;
+  }
+  
+
   @media (max-width: 600px){
     .content_history .section_div h2 {
        font-size: 50px;
@@ -85,5 +148,9 @@
 
     .logos_container img {
       width: 40%;
+    }
+
+    .footer_carrousel{
+      width: 90%;
     }
   }

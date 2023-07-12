@@ -11,8 +11,17 @@ export class HistorySectionComponent {
   logoImage = '../../../assets/Logo.png'
   logo2 = '../../../assets/Logo2.png'
   historyImage = '../../../assets/history.png'
+  currentClass = 'image_container'
 
     constructor(private carouselService: CarouselServiceService ) {}
+
+    setCurrentClass(className: string){
+      this.currentClass = className
+    }
+
+    getCurrentImage(): string {
+      return this.currentClass
+    }
 
     onClickChangeCarouselClass(className: string ): void {
     this.carouselService.setCarouselClass(className);

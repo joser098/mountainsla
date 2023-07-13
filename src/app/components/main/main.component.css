@@ -23,6 +23,7 @@
 }
 
 .header_container h1 {
+  text-align: center;
   padding: 9rem;
   margin: auto;
   width: 25rem;
